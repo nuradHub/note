@@ -1,0 +1,16 @@
+.dashboard-container{
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  height: 100dvh;
+  width: 100dvw;
+  position: relative;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+  .dashboard-container{
+    padding: 20px 13px;
+  }
+}

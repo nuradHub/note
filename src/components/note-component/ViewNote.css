@@ -1,0 +1,89 @@
+.view-note-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 300;
+}
+.view-note-contents{
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #848486;
+  border-radius: 20px;
+  max-height: 400px;
+  background-color: white;
+  position: fixed;
+  animation: animate 0.3s linear;
+}
+@keyframes animate {
+  0% {
+    top: -30%;
+  }
+  50%{
+    top: -20%;
+  }
+  100%{
+    top: 0%;
+  }
+}
+.view-note-header{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.view-note-header h3{
+  font-size: 25px;
+  color: #2a2a2b;
+  max-width: 200px;
+  width: 100%;
+  overflow: scroll;
+  word-break: break-all;
+}
+.view-note-header svg{
+  cursor: pointer;
+  font-size: 20px;
+}
+.view-note-content{
+  color: #848486;
+  line-height: 24px;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 320px) {
+  .view-note-contents {
+    max-width: 275px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .view-note-contents {
+    max-width: 330px;
+  }
+}
+@media screen and (min-width: 540px) {
+  .view-note-contents {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .view-note-contents {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .view-note-contents {
+    max-width: 550px;
+  }
+}

@@ -1,0 +1,104 @@
+.note-table-container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  border-radius: 10px;
+  color: rgb(32, 32, 32);
+  overflow-x: scroll;
+}
+.table-container,
+.table-container th, 
+.table-container td{
+  border: none !important;
+  border-spacing: 0px 0px;
+}
+.table-container{
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.table-head-container{
+  background-color: rgb(24, 24, 24);
+  color: white;
+  text-transform: uppercase;
+}
+
+.table-head-data th{
+  padding: 10px 10px;
+  max-width: 280px;
+}
+.table-head-data .title-header{
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+.table-text-container td{
+  max-width: 280px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.title-data{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.title-data h3{
+  font-size: 20px;
+}
+.title-data p{
+  font-size: 15px;
+  color: rgb(136, 136, 136);
+  width: 100%;
+}
+.table-text-container td{
+  padding: 20px 20px;
+}
+.table-permission{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 12px;
+}
+.table-permission img{
+  width: 20px;
+  background-color: rgb(175, 175, 175);
+  border-radius: 5px;
+}
+.table-date{
+  text-align: center;
+  font-size: 12px;
+}
+.table-action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.table-action svg.fa-pen-to-square{
+  cursor: pointer;
+  background-color: #008000;
+  padding: 7px 9px;
+  border-radius: 5px;
+  color: white;
+}
+.table-action svg.fa-trash{
+  cursor: pointer;
+  background-color: #a51208;
+  padding: 7px 9px;
+  border-radius: 5px;
+  color: white;
+}
+.table-action .edit-table{
+  background-color: rgb(24, 231, 69);
+  padding: 5px;
+}
+.table-action .delete-table{
+  background-color: rgb(233, 72, 9);
+  padding: 5px;
+}

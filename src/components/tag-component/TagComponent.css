@@ -1,0 +1,119 @@
+.tag-container{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: -100%;
+  top: 0px;
+  bottom: 0;
+  background-color: white;
+  padding: 20px 20px;
+  width: 270px;
+  overflow-y: scroll;
+  transition: 0.3s ease-in;
+}
+.tag-container .close-tag-bar{
+  width: 40px;
+  cursor: pointer;
+}
+.display-tag-container{
+  right: 0;
+}
+.tag-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: rgb(65, 64, 64);
+  margin-bottom: 20px;
+}
+.tag-contents svg.fa-circle-xmark{
+  font-size: 30px;
+  cursor: pointer;
+}
+.tag-list-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(238, 237, 237);
+  padding-bottom: 10px;
+}
+.tag-list-header h4{
+  font-size: 20px;
+}
+.tag-list-header svg.fa-plus{
+  font-size: 20px;
+  cursor: pointer;
+}
+.tag-list-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tag-list-text-container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+.tag-lists{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-bottom: 1px solid rgb(238, 237, 237);
+  padding-bottom: 10px;
+}
+.tag-list-text{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.tag-list-text{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tag-list-text h3{
+  border: 1px solid #a52a2a;
+  font-size: 17px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.tag-list-text p{
+  font-size: 17px;
+  font-weight: bold;
+}
+.tag-image svg.fa-ellipsis{
+  cursor: pointer;
+  font-size: 17px;
+}
+.edit-tag-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  z-index: 100;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgb(209, 208, 208);
+  display: none;
+}
+.display-tag{
+  display: flex;
+}
+.tag-edit-content{
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+}
+.tag-edit-content img{
+  width: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .tag-container{
+    width: 230px;
+    z-index: 400;
+  }
+}

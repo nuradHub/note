@@ -1,0 +1,111 @@
+.account-setting-container{
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+.account-setting-data,
+.account-setting-form,
+.social-media-data,
+.social-media-form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  background-color: white;
+  padding: 10px 7px;
+  border-radius: 10px;
+  width: 100%;
+}
+.account-setting-data h4,
+.social-media-data h4{
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: rgb(75, 74, 74);
+}
+
+.account-setting-form input:not([type='radio']),
+.social-media-form input{
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: #f3f6fd;
+  color: rgb(117, 117, 117);
+  font-size: 17px;
+}
+.account-setting-form input:focus,
+.social-media-form input:focus{
+  outline-color: aliceblue;
+}
+.user-name,
+.account-email-container,
+.alternative-email-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.account-email-container,
+.alternative-email-container{
+  margin-top: 20px;
+}
+.language-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.language-container h5{
+  margin-bottom: 10px;
+  
+}
+.language-contents{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.english-container,
+.french-container,
+.spanish-container,
+.arabic-container,
+.italian-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.facebook-container,
+.twitter-container,
+.google-container,
+.instagram-container,
+.youtube-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.twitter-container,
+.google-container,
+.instagram-container,
+.youtube-container{
+  margin-top: 20px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+  .account-setting-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+}
+@media screen and (min-width: 820px) {
+  .account-setting-container{
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .account-setting-container{
+    flex-direction: row;
+    gap: 10px;
+  }
+}

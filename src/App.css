@@ -1,0 +1,13 @@
+.loading-container{
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #f3f6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 400;
+}
+.loading-content{
+  color: #050325;
+  font-size: 50px;
+}
